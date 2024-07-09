@@ -89,7 +89,7 @@ export default function AddProducts() {
         open={success}
       />
       <div
-        className="w-full min-h-[420px] rounded-lg shadow-lg flex  items-center justify-center cursor-pointer border"
+        className="w-full min-h-[420px] rounded-lg shadow-none flex  items-center justify-center cursor-pointer "
         onClick={handleOpen}
       >
         <i className="bx bx-plus text-4xl"></i> Add product

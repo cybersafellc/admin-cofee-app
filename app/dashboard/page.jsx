@@ -33,7 +33,6 @@ export default async function Dashboard({ searchParams }) {
       return data;
     }
   );
-  console.log(getSoldReportDatas);
   if (!dataProfit || !dataSold || !getSoldReportDatas) return notFound();
   return (
     <>

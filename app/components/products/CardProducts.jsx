@@ -25,8 +25,7 @@ export default function CardProducts({
     <>
       <Card
         className={
-          "w-full shadow-lg border h-full " +
-          (stocks ? "opacity-100" : "opacity-50")
+          "w-full shadow-none h-full " + (stocks ? "opacity-100" : "opacity-50")
         }
       >
         <CardHeader

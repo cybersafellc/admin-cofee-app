@@ -1,7 +1,15 @@
 import { NextResponse } from "next/server";
 import authMiddleware from "./utils/middlewares/auth-middleware";
 
-const auth = ["/dashboard", "/products", "/"];
+const auth = [
+  "/dashboard",
+  "/products",
+  "/",
+  "/orders/processing",
+  "/orders/pending",
+  "/orders/cancel",
+  "/orders/done",
+];
 
 export default async function middleware(request) {
   const url = new URL(request.url);
@@ -14,5 +22,13 @@ export default async function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/", "/dashboard", "/products"],
+  matcher: [
+    "/",
+    "/dashboard",
+    "/products",
+    "/orders/processing",
+    "/orders/pending",
+    "/orders/cancel",
+    "/orders/done",
+  ],
 };

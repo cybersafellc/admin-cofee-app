@@ -9,7 +9,7 @@ import {
   Accordion,
   AccordionHeader,
   AccordionBody,
-} from "../material-components";
+} from "../../material-components";
 import {
   PresentationChartBarIcon,
   ShoppingBagIcon,
@@ -40,7 +40,7 @@ export default function SidebarList() {
           </ListItem>
         </Link>
         <Link href="/products">
-          <ListItem className="bg-gray-100">
+          <ListItem>
             <ListItemPrefix>
               <ShoppingBagIcon className="h-5 w-5" />
             </ListItemPrefix>
@@ -58,7 +58,7 @@ export default function SidebarList() {
             />
           }
         >
-          <ListItem className="p-0" selected={open === 1}>
+          <ListItem className="p-0 bg-gray-100" selected={open === 1}>
             <AccordionHeader
               onClick={() => handleOpen(1)}
               className="border-b-0 p-3"
@@ -66,7 +66,7 @@ export default function SidebarList() {
               <ListItemPrefix>
                 <PresentationChartBarIcon className="h-5 w-5" />
               </ListItemPrefix>
-              <Typography color="blue-gray" className="mr-auto font-normal">
+              <Typography color="blue-gray" className="mr-auto font-normal ">
                 Order
               </Typography>
             </AccordionHeader>
@@ -90,7 +90,7 @@ export default function SidebarList() {
                 </ListItem>
               </Link>
               <Link href="/orders/processing">
-                <ListItem>
+                <ListItem className="bg-gray-100">
                   <ListItemPrefix>
                     <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                   </ListItemPrefix>
