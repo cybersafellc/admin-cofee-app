@@ -20,6 +20,7 @@ import {
   ChevronRightIcon,
 } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import ButtonLogout from "../ButtonLogout";
 
 export default function SidebarList() {
   const [open, setOpen] = React.useState(0);
@@ -31,12 +32,14 @@ export default function SidebarList() {
   return (
     <>
       <List>
-        <ListItem className="bg-gray-100">
-          <ListItemPrefix>
-            <PresentationChartBarIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Dashboard
-        </ListItem>
+        <Link href="/dashboard">
+          <ListItem className="bg-gray-100">
+            <ListItemPrefix>
+              <PresentationChartBarIcon className="h-5 w-5" />
+            </ListItemPrefix>
+            Dashboard
+          </ListItem>
+        </Link>
         <Link href="/products">
           <ListItem>
             <ListItemPrefix>
@@ -62,7 +65,7 @@ export default function SidebarList() {
               className="border-b-0 p-3"
             >
               <ListItemPrefix>
-                <PresentationChartBarIcon className="h-5 w-5" />
+                <i className="bx bxs-coffee-togo text-xl"></i>
               </ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
                 Order
@@ -106,24 +109,15 @@ export default function SidebarList() {
             </List>
           </AccordionBody>
         </Accordion>
-        <ListItem>
-          <ListItemPrefix>
-            <UserCircleIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Invoice
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
-            <Cog6ToothIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Settings
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
-            <PowerIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Log Out
-        </ListItem>
+        <Link href="/sold-report">
+          <ListItem>
+            <ListItemPrefix>
+              <i className="bx bxs-report text-xl"></i>
+            </ListItemPrefix>
+            Sold Report
+          </ListItem>
+        </Link>
+        <ButtonLogout />
       </List>
     </>
   );

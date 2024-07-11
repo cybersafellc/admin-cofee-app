@@ -41,7 +41,7 @@ export default function SidebarList() {
           </ListItem>
         </Link>
         <Link href="/products">
-          <ListItem className="bg-gray-100">
+          <ListItem>
             <ListItemPrefix>
               <ShoppingBagIcon className="h-5 w-5" />
             </ListItemPrefix>
@@ -110,7 +110,7 @@ export default function SidebarList() {
           </AccordionBody>
         </Accordion>
         <Link href="/sold-report">
-          <ListItem>
+          <ListItem className="bg-gray-100">
             <ListItemPrefix>
               <i className="bx bxs-report text-xl"></i>
             </ListItemPrefix>

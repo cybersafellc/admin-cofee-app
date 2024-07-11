@@ -58,13 +58,13 @@ export default function CardProfit({ profit, sold }) {
       <article className="rounded-lg border border-gray-100 bg-white p-6">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-sm text-gray-500">All Time Sold</p>
+            <p className="text-sm text-gray-500">All Time Transaction</p>
 
             <p className="text-2xl font-medium text-gray-900">{sold}</p>
           </div>
 
           <span className="rounded-full bg-blue-100 p-3 text-blue-600">
-            <i className="bx bxs-package text-2xl p-1"></i>
+            <i className="bx bxs-coffee-togo p-1 text-2xl"></i>
           </span>
         </div>
 

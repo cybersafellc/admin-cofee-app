@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Container from "../components/Container";
 import CardProfit from "../components/dashboard/CardProfit";
 import SidebarList from "../components/dashboard/SidebarList";
-import TableTransaction from "../components/dashboard/TableTransaction";
+import TableTransaction from "../components/TableTransaction";
 import Section from "../components/Section";
 import Sidebar from "../components/Sidebar";
 import {

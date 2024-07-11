@@ -26,7 +26,7 @@ export default async function Cancel() {
           <div className="ps-[20rem] grid gap-2">
             {orders.map((order, index) =>
               order.product_details ? (
-                <div>
+                <div key={index + 1}>
                   <CardOrder order={order} />
                 </div>
               ) : (

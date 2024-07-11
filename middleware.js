@@ -9,6 +9,8 @@ const auth = [
   "/orders/pending",
   "/orders/cancel",
   "/orders/done",
+  "/sold-report",
+  "/sold-report/print",
 ];
 
 export default async function middleware(request) {
@@ -30,5 +32,7 @@ export const config = {
     "/orders/pending",
     "/orders/cancel",
     "/orders/done",
+    "/sold-report",
+    "/sold-report/print",
   ],
 };
