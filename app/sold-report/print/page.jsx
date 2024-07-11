@@ -60,7 +60,7 @@ export default async function Print({ searchParams }) {
                   {datas.map((data, index) => {
                     total_ammount += data.total_amount;
                     return (
-                      <tr>
+                      <tr key={index + 1}>
                         <td className="py-2 px-4 border-b border-gray-300">
                           {data.id}
                         </td>
